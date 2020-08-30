@@ -3,6 +3,11 @@
 {% load static %}
 
 {% block head %}
+    <style media="screen">
+        .kbbq:hover{
+            color:#9dbabd
+        }
+    </style>
     <!-- You can add CSS & Javascript here like you would in <head></head> tags. -->
 {% endblock %}
 
@@ -14,4 +19,7 @@
     <br>
     <p>I can link to other pages within my site like this:</p>
     <a href="{% url 'main:about' %}">Click me!</a>
+    <hr>
+    <a href="{% url 'main:contact' %}">Contact me!</a>
+    <p class="kbbq">hi, i'm <strong>kbbq</strong>!</p>
 {% endblock %}
